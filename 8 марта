@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С 8 Марта, Татьяна!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            background: url('https://s.poembook.ru/theme/33/9e/85/353a578aa9a8927cffe76d8ad691379c7b311132.jpeg') no-repeat center center/cover; /* Весенний фон */
+            color: #333;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #e91e63; /* Розовый цвет для праздника */
+            font-weight: bold;
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .signature {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #0078D7;
+            margin-top: 30px;
+        }
+        .logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        .flowers {
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 150px;
+            opacity: 0.8;
+            animation: float 6s ease-in-out infinite;
+        }
+        .flowers.left {
+            top: auto;
+            bottom: -50px;
+            left: -50px;
+            right: auto;
+            animation-delay: 2s;
+        }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(10deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Цветы для украшения -->
+        <img src="https://avatars.mds.yandex.net/i?id=b0322cfcc12a0c6611e53daf580ab0f5ec3a5620-5341520-images-thumbs&n=13" alt="Цветы" class="flowers">
+        <img src="https://avatars.mds.yandex.net/i?id=b0322cfcc12a0c6611e53daf580ab0f5ec3a5620-5341520-images-thumbs&n=13" alt="Цветы" class="flowers left">
+
+        <!-- Логотип компании -->
+        <img src="https://static.platforma-it.ru/CAllcorp2/b98/b98b44edaedf8fc3053daf7d3f5d8b2d/1d09f8bef21f8b47e34031d911ca08f0.svg" alt="Логотип ООО Новая Платформа" class="logo">
+
+        <!-- Заголовок и текст поздравления -->
+        <h1>С 8 Марта, Татьяна!</h1>
+        <p>
+            Дорогая Татьяна Туктарова!<br>
+            От всей души поздравляем Вас с Международным женским днём!<br>
+            Пусть весна принесёт в Вашу жизнь яркие краски, вдохновение и радость!<br>
+            Благодарим за Ваш профессионализм, dedication и вклад в развитие нашей компании.<br>
+            Желаем Вам крепкого здоровья, счастья и новых успехов во всех начинаниях!
+        </p>
+        <p class="signature">С уважением,<br>ООО "Новая Платформа"</p>
+    </div>
+</body>
+</html>
